@@ -73,6 +73,18 @@ function MyComponent() {
   );
 }
 
+// List rendring using Mao function
+function MyComponent({ items }) {
+  return (
+    <ul>
+      {items.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}
+
+
 //Conditional Rendring
 function MyComponent({ isLoggedIn }) {
   return isLoggedIn ? <UserGreeting /> : <GuestGreeting />;
