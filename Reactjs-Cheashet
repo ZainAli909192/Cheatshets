@@ -39,4 +39,20 @@ function Greeting(props) {
 
 <Greeting name="Zain Ali" />
 
+// Lifecycle of class componenets
+class MyComponent extends React.Component {
+  componentDidMount() {
+    console.log('Component mounted');
+  }
+
+  componentWillUnmount() {
+    console.log('Component will unmount');
+  }
+
+  render() {
+    return <div>Hello, World!</div>;
+  }
+}
+
+
 
