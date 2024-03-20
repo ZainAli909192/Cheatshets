@@ -73,4 +73,8 @@ function MyComponent() {
   );
 }
 
+//Conditional Rendring
+function MyComponent({ isLoggedIn }) {
+  return isLoggedIn ? <UserGreeting /> : <GuestGreeting />;
+}
 
