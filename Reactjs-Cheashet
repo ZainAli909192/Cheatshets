@@ -1,0 +1,32 @@
+// Components
+
+// Functional Component
+function MyComponent() {
+  return <div>Hello, World!</div>;
+}
+
+// Class Component
+class MyComponent extends React.Component {
+  render() {
+    return <div>Hello, World!</div>;
+  }
+}
+
+// class components
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  render() {
+    return (
+      <div>
+        Count: {this.state.count}
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Increment
+        </button>
+      </div>
+    );
+  }
+}
